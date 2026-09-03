@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Calendar Sync Ebijun</title>
+<meta name="description" content="Calendar Sync Ebijunが取得する情報、利用目的、保存先、認可の取り消し方法を記載したプライバシーポリシーです。">
+<link rel="canonical" href="https://calendar-sync.kwie.jp/privacy/">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<div class="container">
+
+<header class="site-header">
+<h1>プライバシーポリシー</h1>
+<p class="lead">Calendar Sync Ebijun（以下「本ツール」）における個人情報および Google ユーザーデータの取り扱いについて定めます。</p>
+</header>
+
+<main>
+
+<h2>1. 本ツールの目的</h2>
+<p>本ツールは、利用者が連携した複数のGoogle Calendar間で、終日以外の予定の時間帯を非公開のブロックとして同期し、ダブルブッキングを防ぐことを目的としています。</p>
+
+<h2>2. 取得する情報</h2>
+<p>本ツールは、利用者がGoogleアカウントで認可した範囲において、次の情報を取得します。</p>
+<ul>
+<li>連携したGoogle Calendarの予定の開始時刻、終了時刻、終日かどうかの区別</li>
+<li>同期した予定と同期先ブロックの対応付けに必要なカレンダーIDおよびイベントID</li>
+<li>本ツールがGoogle Calendarへアクセスするための OAuth リフレッシュトークン</li>
+</ul>
+<p>権限は、予定の読み取りと、同期先カレンダーにおける非公開ブロックの作成、更新、削除に必要な範囲に限ります。</p>
+
+<h2>3. 同期先へコピーしない情報</h2>
+<p>同期先のカレンダーへ書き込むのは予定の時間帯だけです。予定の<strong>件名、説明、参加者、会議URL</strong>は同期先へコピーしません。</p>
+
+<h2>4. 利用目的</h2>
+<p>取得した情報は、前記1の同期を実行し、その状態を維持する目的にのみ利用します。</p>
+
+<h2>5. 情報の保存</h2>
+<ul>
+<li>OAuth リフレッシュトークンは AWS Secrets Manager に保存します。</li>
+<li>同期に必要なイベント識別子とその対応関係は Amazon DynamoDB に保存します。</li>
+</ul>
+<p>いずれも同期の実行に必要な範囲で保存します。</p>
+
+<h2>6. 利用しない範囲</h2>
+<p>本ツールは、取得したGoogle Calendarのデータを次の目的に利用しません。</p>
+<ul>
+<li>広告の配信または広告目的の利用</li>
+<li>販売または譲渡</li>
+<li>同期機能の提供と無関係な一般目的の分析</li>
+<li>第三者への提供</li>
+</ul>
+<p>本ツールによる Google ユーザーデータの取り扱いは、限定的な使用に関する要件を含む Google API Services User Data Policy に従います。</p>
+
+<h2>7. 認可の取り消し</h2>
+<p>利用者は、Googleアカウントの「サードパーティ製アプリとサービス」の設定から、本ツールへの認可をいつでも取り消せます。取り消した後、本ツールは対象のGoogle Calendarへアクセスできなくなり、同期は停止します。</p>
+
+<h2>8. お問い合わせ</h2>
+<p>本ポリシーおよび本ツールにおけるデータの取り扱いに関するお問い合わせは <a href="mailto:ebijun1007@gmail.com">ebijun1007@gmail.com</a> までご連絡ください。</p>
+
+<dl class="meta">
+<dt>制定日</dt>
+<dd>2026年9月3日</dd>
+</dl>
+
+</main>
+
+<footer class="site-footer">
+<p><a href="/">ホームへ戻る</a></p>
+<p>お問い合わせ: <a href="mailto:ebijun1007@gmail.com">ebijun1007@gmail.com</a></p>
+</footer>
+
+</div>
+</body>
+</html>

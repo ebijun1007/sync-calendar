@@ -1,0 +1,130 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --surface: #f6f7f9;
+  --border: #dfe3e8;
+  --text: #1b1f24;
+  --muted: #5b636d;
+  --accent: #1a5fd0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171b;
+    --surface: #1c2026;
+    --border: #2e343c;
+    --text: #e8eaed;
+    --muted: #a8b0ba;
+    --accent: #7ba8f5;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 1.25rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+header.site-header {
+  padding: 3rem 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header.site-header p.lead {
+  color: var(--muted);
+  margin: 0.5rem 0 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 2.5rem 0 0.75rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+ul {
+  padding-left: 1.4rem;
+}
+
+li {
+  margin: 0.35rem 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+dl.meta {
+  margin: 1.25rem 0 0;
+}
+
+dl.meta dt {
+  font-weight: 700;
+  margin-top: 0.75rem;
+}
+
+dl.meta dd {
+  margin: 0.25rem 0 0;
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding: 1.5rem 0 3rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer.site-footer p {
+  margin: 0.35rem 0;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 1rem;
+    font-size: 15px;
+  }
+
+  header.site-header {
+    padding-top: 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

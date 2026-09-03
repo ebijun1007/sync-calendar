@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendar Sync Ebijun</title>
+<meta name="description" content="複数のGoogle Calendar間で終日以外の予定の時間帯を非公開ブロックとして同期し、ダブルブッキングを防ぐ個人用ツールです。">
+<link rel="canonical" href="https://calendar-sync.kwie.jp/">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<div class="container">
+
+<header class="site-header">
+<h1>Calendar Sync Ebijun</h1>
+<p class="lead">複数のGoogle Calendar間で予定の時間帯を非公開ブロックとして同期し、ダブルブッキングを防ぐ個人用ツールです。</p>
+</header>
+
+<main>
+
+<h2>できること</h2>
+<ul>
+<li>連携した複数のGoogle Calendarから、終日以外の予定の開始時刻と終了時刻を読み取ります。</li>
+<li>読み取った時間帯を、同期先のGoogle Calendarに非公開の予定（ブロック）として作成、更新、削除します。</li>
+<li>これにより、別のカレンダーで埋まっている時間帯が空き時間として見えなくなり、ダブルブッキングを防ぎます。</li>
+</ul>
+
+<h2>同期しない情報</h2>
+<div class="card">
+<p>同期先のカレンダーへは、予定の<strong>時間帯だけ</strong>を書き込みます。予定の件名、説明、参加者、会議URLは同期先へコピーしません。</p>
+</div>
+
+<h2>終日の予定について</h2>
+<p>終日の予定は時間帯を占有しないため、同期の対象外です。</p>
+
+<h2>Googleアカウントとの連携</h2>
+<p>本ツールは、Googleアカウントの認可を得てGoogle Calendarにアクセスします。認可はGoogleアカウントの設定からいつでも取り消せます。取り消した後、本ツールはそのカレンダーへアクセスできなくなり、同期は停止します。</p>
+
+<h2>プライバシー</h2>
+<p>取得する情報、その利用目的、保存先、および認可の取り消し方法は、<a href="/privacy/">プライバシーポリシー</a>に記載しています。</p>
+
+<h2>お問い合わせ</h2>
+<p>本ツールに関するお問い合わせは <a href="mailto:ebijun1007@gmail.com">ebijun1007@gmail.com</a> までご連絡ください。</p>
+
+</main>
+
+<footer class="site-footer">
+<p><a href="/privacy/">プライバシーポリシー</a></p>
+<p>お問い合わせ: <a href="mailto:ebijun1007@gmail.com">ebijun1007@gmail.com</a></p>
+</footer>
+
+</div>
+</body>
+</html>
