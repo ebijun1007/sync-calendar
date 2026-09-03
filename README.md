@@ -1,0 +1,2 @@
+# sync-calendar
+複数のGoogle Calendar間で予定時間を非公開ブロックとして同期する個人用ツール
